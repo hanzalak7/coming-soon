@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="submit_registration.php" method="post">
+        <!-- Personal Information -->
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required><br>
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required><br>
+
+        <label for="name_badge">How would you like your name printed on your name badge?</label>
+        <input type="text" id="name_badge" name="name_badge"><br>
+
+        <!-- Company Information -->
+        <label for="company_name">Company Name:</label>
+        <input type="text" id="company_name" name="company_name"><br>
+
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title"><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="mobile_phone">Mobile Phone Number:</label>
+        <input type="tel" id="mobile_phone" name="mobile_phone"><br>
+
+        <label for="home_address">Home Address:</label>
+        <input type="text" id="home_address" name="home_address"><br>
+
+        <label for="home_country">Home Country:</label>
+        <input type="text" id="home_country" name="home_country"><br>
+
+        <label for="home_state">Home State / Prov. Code:</label>
+        <input type="text" id="home_state" name="home_state"><br>
+
+        <label for="home_zip">Home Zip / Postal Code:</label>
+        <input type="text" id="home_zip" name="home_zip"><br>
+
+        <!-- Special Accommodations and Dietary Restrictions -->
+        <label for="special_accommodations">Special Accommodations:</label>
+        <textarea id="special_accommodations" name="special_accommodations"></textarea><br>
+
+        <label for="dietary_restrictions">Dietary Restrictions:</label>
+        <textarea id="dietary_restrictions" name="dietary_restrictions"></textarea><br>
+
+        <!-- Event Details -->
+        <label for="meet_and_greet">Are you attending the Meet and Greet Dinner with Galderma on Friday (February 2nd) evening?</label>
+        <input type="radio" id="meet_and_greet_yes" name="meet_and_greet" value="Yes">
+        <label for="meet_and_greet_yes">Yes</label>
+        <input type="radio" id="meet_and_greet_no" name="meet_and_greet" value="No">
+        <label for="meet_and_greet_no">No</label><br>
+
+        <label for="scrub_size">Scrub Size:</label>
+        <input type="text" id="scrub_size" name="scrub_size"><br>
+
+        <!-- Medical Information -->
+        <label for="medical_license">Medical License:</label>
+        <input type="text" id="medical_license" name="medical_license"><br>
+
+        <label for="years_of_experience">Years of Experience:</label>
+        <input type="number" id="years_of_experience" name="years_of_experience"><br>
+
+        <label for="cadaver_lab">Have you attended the Cadaver Lab before?</label>
+        <input type="radio" id="cadaver_lab_yes" name="cadaver_lab" value="Yes">
+        <label for="cadaver_lab_yes">Yes</label>
+        <input type="radio" id="cadaver_lab_no" name="cadaver_lab" value="No">
+        <label for="cadaver_lab_no">No</label><br>
+
+        <label for="other_cadaver_lab">Other Cadaver Lab:</label>
+        <input type="text" id="other_cadaver_lab" name="other_cadaver_lab"><br>
+
+        <!-- Event Promotion -->
+        <label for="how_learned">How did you learn about the event?</label>
+        <input type="text" id="how_learned" name="how_learned"><br>
+
+        <!-- Photograph & Video Release Form -->
+        <h2>Photograph & Video Release Form</h2>
+        <label for="consent_date">Consent Date:</label>
+        <input type="date" id="consent_date" name="consent_date" required><br>
+
+        <label for="image_release">I release American Aesthetics Institute assigns, licenses, and successors from any claims that may arise regarding the use of my image, including any claims of defamation, invasion of privacy, or infringement of moral rights, rights of publicity, or copy.</label>
+        <input type="checkbox" id="image_release" name="image_release" required><br>
+
+        <!-- Emergency Contact -->
+        <h2>Emergency Contact</h2>
+        <label for="emergency_contact_name">Emergency Contact Name:</label>
+        <input type="text" id="emergency_contact_name" name="emergency_contact_name" required><br>
+
+        <label for="emergency_contact_phone">Emergency Contact Phone Number:</label>
+        <input type="tel" id="emergency_contact_phone" name="emergency_contact_phone" required><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
